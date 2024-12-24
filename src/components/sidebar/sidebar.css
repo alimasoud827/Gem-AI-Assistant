@@ -32,6 +32,15 @@
 .sidebar .recent{
   display: flex;
   flex-direction: column;
+  animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .sidebar .recent-title{
@@ -62,4 +71,9 @@
   padding: 10px;
   color: #282828;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .sidebar{
+    display: none;
+  }
 }
